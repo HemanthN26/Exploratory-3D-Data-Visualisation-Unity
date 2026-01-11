@@ -27,5 +27,17 @@ Relevant for research in:
 - Human Computer Interaction (HCI)
 - Exploratory Data Analysis
 
+## Visual Examples
+
+### UMAP Embedding (3D)
+This plot shows the 3D UMAP projection of features extracted from high dimensional data.  
+![UMAP 3D Embedding](![umap_embedding png](https://github.com/user-attachments/assets/4b3cbb51-427b-431a-8f62-5be266936374)
+)
+
+### Unity 3D Concept View
+This screenshot shows the initial Unity 3D view for cluster exploration.  
+![Unity 3D View](<img width="688" height="455" alt="3DView" src="https://github.com/user-attachments/assets/3be21680-60fd-47b8-85f3-d99601d9a900" />)
+
+
 ## Status
 Ongoing research prototype
