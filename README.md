@@ -1,4 +1,4 @@
-# Exploratory 2D/3D Data Visualization using Unity
+# Exploratory 2D/3D Data Visualisation using Unity
 
 This is an ongoing research oriented project focused on interactive visualisation of high dimensional datasets using 2D and 3D embeddings.
 
@@ -35,7 +35,8 @@ This plot shows the 3D UMAP projection of features extracted from high dimension
 
 ### Unity 3D Concept View
 This screenshot shows the initial Unity 3D view for cluster exploration.  
-![Unity 3D View](https://github.com/user-attachments/assets/bbf36def-a68b-4ba6-8205-7a26a2ff1cd8)
+![Unity 3D View](<img width="1155" height="563" alt="image" src="https://github.com/user-attachments/assets/03b666de-b7d4-497a-b652-63c4d351fa75" />
+)
 
 ## Status
 Ongoing research prototype
