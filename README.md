@@ -1,72 +1,146 @@
 # Exploratory 2D/3D Data Visualisation using Unity
 
-This is an ongoing research-oriented project focused on interactive visualisation of high-dimensional datasets using 2D and 3D embeddings.
+An interactive research oriented visualisation system for exploring high-dimensional datasets through spatial 2D and 3D environments.
 
 ---
 
-## Objective
-The goal of this project is to enable intuitive exploration of complex datasets by mapping dimensionality-reduced embeddings into interactive 2D and 3D environments.
+## Demo
+
+
+https://github.com/user-attachments/assets/a5498874-f8cc-4f23-9e60-d5b61107b8b3
+
+
+---
+
+## Overview
+
+This project investigates how spatial interaction in 3D environments influences users understanding of complex data.  
+It combines dimensionality reduction, interactive visualisation, and immersive navigation techniques to enable intuitive exploration of high-dimensional datasets.
+
+Instead of traditional static plots, this system allows users to **navigate data as a virtual environment** where clusters, relationships, and outliers can be explored interactively.
+
+---
+
+## Research Goal
+
+The goal is to evaluate whether immersive spatial visualisation improves users ability to:
+
+- perceive cluster structure
+- understand similarity relationships
+- detect outliers
+- explore large datasets efficiently
+
+---
+
+## Research Question
+
+> Does interactive 3D spatial visualisation improve human perception and exploration of high-dimensional data compared to traditional 2D visualisations?
 
 ---
 
 ## Core Concepts
+
 - Dimensionality reduction using **UMAP**
-- Deep feature extraction using **ResNet50**
-- Interactive exploration using a **3D galaxy-based metaphor** in Unity
+- Feature extraction using **ResNet50**
+- Spatial metaphor based visualisation
+- Interactive cluster exploration
+- Hierarchical information disclosure
+
+---
+
+## Interaction Design
+
+The system uses a hierarchical spatial interaction model:
+
+| Level | Representation | Interaction |
+|------|----------------|-------------|
+Clusters | Planets | Click to expand |
+Subclusters | Moons | Click to reveal thumbnails |
+Data Points | Thumbnails | Click to inspect |
+
+### Design Principles
+- Progressive disclosure to reduce visual clutter  
+- Spatial grouping to preserve similarity relationships  
+- Distance-based relevance cues  
+- Direct manipulation interaction  
+
+This structure allows users to explore large datasets without losing global context.
 
 ---
 
 ## Technology Stack
-- **Python** (TensorFlow, scikit-learn)
-- **UMAP** for dimensionality reduction
-- **Unity 3D** (C#)
-- Data visualization and interaction design
+
+**Data Processing**
+- Python
+- TensorFlow
+- Scikit-learn
+- UMAP
+
+**Visualisation**
+- Unity 6 (C#)
+- Custom interaction system
+- Spatial UI logic
 
 ---
 
-## Current Work
-- Refining spatial mapping of clusters in 3D
-- Improving interaction techniques for dataset exploration
-- Preparing comparative analysis between 2D and 3D representations
+## System Pipeline
+
+Raw Data -> Feature Extraction (ResNet50) -> Dimensionality Reduction (UMAP) -> Spatial Mapping -> Unity Interactive Environment -> User Exploration
+
+---
+
+## Current Features
+
+- Interactive 3D cluster exploration
+- Spatial navigation of embeddings
+- Click based hierarchical interaction
+- Distance-aware visualisation logic
+- Outlier highlighting
+- Dynamic expansion and collapse of clusters
+
+---
+
+## Current Development Focus
+
+- Refining spatial layout accuracy
+- Improving interaction responsiveness
+- Enhancing visual feedback cues
+- Optimising rendering performance
+- Preparing controlled user evaluation study
+
+---
+
+## Planned Evaluation Study
+
+A structured user study will be conducted to evaluate the effectiveness of immersive data exploration.
+
+Metrics to be measured:
+
+- Task completion time
+- Accuracy of cluster identification
+- Outlier detection performance
+- Interaction efficiency
+- User confidence
+- Qualitative usability feedback
 
 ---
 
 ## Research Relevance
-Relevant for research in:
+
+This project is relevant for research fields including:
+
 - Information Visualisation
-- Human-Computer Interaction (HCI)
-- Exploratory Data Analysis
+- Human Computer Interaction
+- Visual Analytics
+- Immersive Analytics
+- XR Interaction Design
 
 ---
 
-## Visual Examples
+## Project Status
 
-### UMAP Embedding (3D)
-This plot shows the 3D UMAP projection of features extracted from high-dimensional data.
+**Active Research Prototype - Under Development**
 
-![UMAP 3D Embedding](https://github.com/user-attachments/assets/4b3cbb51-427b-431a-8f62-5be266936374)
+New interaction techniques and evaluation experiments are currently being implemented.
 
----
-
-### Unity 3D Concept View
-This screenshot shows the initial Unity 3D view for cluster exploration.
-
-![Unity 3D View](https://github.com/user-attachments/assets/03b666de-b7d4-497a-b652-63c4d351fa75)
-
----
-
-## Status
-**Ongoing research prototype**
-
-## Planned Evaluation Study
-
-A structured user study is currently being prepared to evaluate how spatial interaction affects perception of clusters, similarity relationships, and outlier detection in immersive 3D environments.
-
-The study will measure:
-- task completion time
-- interaction efficiency
-- usability perception
-- qualitative feedback
-
-This evaluation will be conducted in the coming weeks.
 
