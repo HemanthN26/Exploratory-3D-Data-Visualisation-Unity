@@ -57,3 +57,16 @@ This screenshot shows the initial Unity 3D view for cluster exploration.
 
 ## Status
 **Ongoing research prototype**
+
+## Planned Evaluation Study
+
+A structured user study is currently being prepared to evaluate how spatial interaction affects perception of clusters, similarity relationships, and outlier detection in immersive 3D environments.
+
+The study will measure:
+- task completion time
+- interaction efficiency
+- usability perception
+- qualitative feedback
+
+This evaluation will be conducted in the coming weeks.
+
