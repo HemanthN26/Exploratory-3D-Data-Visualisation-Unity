@@ -150,19 +150,21 @@ The original system architecture was designed and validated using a dataset of a
 
 To address these challenges, the system architecture is currently being extended with an additional hierarchical abstraction layer above clusters.
 
+---
+
 ### New Hierarchical Model
 
-Dataset  
-└── Super-Clusters (new layer)  
-  └── Clusters (planets)  
-    └── Subclusters (moons)  
-      └── Images (thumbnails)
+Dataset -> Super-Clusters (new layer) -> Clusters (planets) -> Subclusters (moons) -> Images (thumbnails)
+
+---
 
 ### Design Principle
 
-The hierarchy is structural only — **embedding coordinates remain untouched**.  
+The hierarchy is structural only embedding coordinates remain untouched.  
 No scaling, normalization, or repositioning is applied to data points.  
 All spatial relationships strictly reflect the original embedding space.
+
+---
 
 ### Purpose of Upgrade
 
