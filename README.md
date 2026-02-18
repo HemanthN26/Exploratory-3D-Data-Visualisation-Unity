@@ -137,6 +137,39 @@ This project is relevant for research fields including:
 
 ---
 
+---
+
+## Scalability Architecture Upgrade (In Progress)
+
+The original system architecture was designed and validated using a dataset of approximately 3,000 images. While this configuration performed well for moderate dataset sizes, scaling to a new dataset containing over 12,000 images introduced new visualisation and system design challenges
+
+- increased spatial density
+- cluster overlap
+- visual occlusion
+- navigation complexity
+
+To address these challenges, the system architecture is currently being extended with an additional hierarchical abstraction layer above clusters.
+
+### New Hierarchical Model
+
+Dataset  
+└── Super-Clusters (new layer)  
+  └── Clusters (planets)  
+    └── Subclusters (moons)  
+      └── Images (thumbnails)
+
+### Design Principle
+
+The hierarchy is structural only — **embedding coordinates remain untouched**.  
+No scaling, normalization, or repositioning is applied to data points.  
+All spatial relationships strictly reflect the original embedding space.
+
+### Purpose of Upgrade
+
+This refactor transforms the system from a small dataset research prototype into a scalable exploratory visualisation framework capable of supporting large embedding datasets (10k–50k+ samples).
+
+---
+
 ## Project Status
 
 **Active Research Prototype - Under Development**
