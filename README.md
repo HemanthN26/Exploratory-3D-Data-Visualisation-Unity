@@ -1,181 +1,128 @@
-# Exploratory 2D/3D Data Visualisation using Unity
+# Exploratory 3D Information Retrieval Visualization System
 
-An interactive research oriented visualisation system for exploring high-dimensional datasets through spatial 2D and 3D environments.
-
----
-
-## Demo
+Research-oriented immersive analytics system for exploring large
 
 
-https://github.com/user-attachments/assets/a5498874-f8cc-4f23-9e60-d5b61107b8b3
 
+ image embedding datasets through interactive hierarchical 3D environments.
+
+Built using Unity, Python, UMAP, HDBSCAN, and deep visual embeddings.
 
 ---
 
-## Overview
+# Overview
 
-This project investigates how spatial interaction in 3D environments influences users understanding of complex data.  
-It combines dimensionality reduction, interactive visualisation, and immersive navigation techniques to enable intuitive exploration of high-dimensional datasets.
+This project investigates how spatial interaction in 3D environments influences human understanding of high-dimensional data.
 
-Instead of traditional static plots, this system allows users to **navigate data as a virtual environment** where clusters, relationships, and outliers can be explored interactively.
+Instead of traditional static visualizations, the system enables users to explore embedding spaces as interactive spatial environments where semantic relationships, clusters, and outliers can be navigated directly.
 
----
+The visualization combines:
 
-## Research Goal
+* machine learning embeddings
+* dimensionality reduction
+* hierarchical clustering
+* immersive interaction design
+* exploratory visual analytics
 
-The goal is to evaluate whether immersive spatial visualisation improves users ability to:
-
-- perceive cluster structure
-- understand similarity relationships
-- detect outliers
-- explore large datasets efficiently
+to create a scalable exploratory information retrieval environment.
 
 ---
 
-## Research Question
+# Key Features
 
-> Does interactive 3D spatial visualisation improve human perception and exploration of high-dimensional data compared to traditional 2D visualisations?
-
----
-
-## Core Concepts
-
-- Dimensionality reduction using **UMAP**
-- Feature extraction using **ResNet50**
-- Spatial metaphor based visualisation
-- Interactive cluster exploration
-- Hierarchical information disclosure
+* Interactive hierarchical 3D exploration
+* Geometry-preserving embedding visualization
+* Progressive reveal interaction system
+* HDBSCAN-based hierarchical clustering
+* Outlier-aware visual exploration
+* Supports 14k+ images and 1500+ hierarchy nodes
+* Usability-tested interaction workflow
 
 ---
 
-## Interaction Design
+# Interaction Model
 
-The system uses a hierarchical spatial interaction model:
+The system uses a progressive hierarchical interaction model:
 
-| Level | Representation | Interaction |
-|------|----------------|-------------|
-Clusters | Planets | Click to expand |
-Subclusters | Moons | Click to reveal thumbnails |
-Data Points | Thumbnails | Click to inspect |
+| Level       | Representation | Interaction         |
+| ----------- | -------------- | ------------------- |
+| Clusters    | Planets        | Enter cluster space |
+| Subclusters | Nodes / Moons  | Reveal image groups |
+| Images      | Thumbnails     | Inspect samples     |
 
-### Design Principles
-- Progressive disclosure to reduce visual clutter  
-- Spatial grouping to preserve similarity relationships  
-- Distance-based relevance cues  
-- Direct manipulation interaction  
-
-This structure allows users to explore large datasets without losing global context.
+This interaction strategy reduces visual clutter while maintaining spatial context during exploration.
 
 ---
 
-## Technology Stack
+# System Pipeline
 
-**Data Processing**
-- Python
-- TensorFlow
-- Scikit-learn
-- UMAP
-
-**Visualisation**
-- Unity 6 (C#)
-- Custom interaction system
-- Spatial UI logic
+Images -> ResNet50 Feature Extraction -> Embedding Generation -> UMAP Dimensionality Reduction -> HDBSCAN Hierarchical Clustering -> Geometry-Preserving Spatial Layout -> Unity Interactive Visualization -> Exploratory User Interaction
 
 ---
 
-## System Pipeline
+# Technology Stack
 
-Raw Data -> Feature Extraction (ResNet50) -> Dimensionality Reduction (UMAP) -> Spatial Mapping -> Unity Interactive Environment -> User Exploration
+## Data Processing
 
----
+* Python
+* TensorFlow
+* Scikit-learn
+* UMAP
+* HDBSCAN
 
-## Current Features
+## Visualization
 
-- Interactive 3D cluster exploration
-- Spatial navigation of embeddings
-- Click based hierarchical interaction
-- Distance-aware visualisation logic
-- Outlier highlighting
-- Dynamic expansion and collapse of clusters
-
----
-
-## Current Development Focus
-
-- Refining spatial layout accuracy
-- Improving interaction responsiveness
-- Enhancing visual feedback cues
-- Optimising rendering performance
-- Preparing controlled user evaluation study
+* Unity 6
+* C#
+* Custom interaction systems
+* Spatial UI logic
 
 ---
 
-## Planned Evaluation Study
+# Scalability Upgrade
 
-A structured user study will be conducted to evaluate the effectiveness of immersive data exploration.
+The system was initially developed using datasets containing approximately 3,000 images.
 
-Metrics to be measured:
+To support larger datasets (14k+ images), the architecture was extended with additional hierarchical abstraction layers and improved layout strategies to maintain:
 
-- Task completion time
-- Accuracy of cluster identification
-- Outlier detection performance
-- Interaction efficiency
-- User confidence
-- Qualitative usability feedback
+* spatial readability
+* hierarchy clarity
+* geometry preservation
+* navigation usability
 
----
-
-## Research Relevance
-
-This project is relevant for research fields including:
-
-- Information Visualisation
-- Human Computer Interaction
-- Visual Analytics
-- Immersive Analytics
-- XR Interaction Design
+The hierarchy is structural only — embedding coordinates remain unchanged.
 
 ---
 
----
+# Research Areas
 
-## Scalability Architecture Upgrade (In Progress)
+This project intersects multiple research and engineering domains:
 
-The original system architecture was designed and validated using a dataset of approximately 3,000 images. While this configuration performed well for moderate dataset sizes, scaling to a new dataset containing over 12,000 images introduced new visualisation and system design challenges
-
-- increased spatial density
-- cluster overlap
-- visual occlusion
-- navigation complexity
-
-To address these challenges, the system architecture is currently being extended with an additional hierarchical abstraction layer above clusters.
+* Information Visualization
+* Immersive Analytics
+* Human-Computer Interaction
+* Visual Analytics
+* Exploratory Information Retrieval
+* XR Interaction Design
 
 ---
 
-### New Hierarchical Model
+# Documentation
 
-Dataset -> Super-Clusters (new layer) -> Clusters (planets) -> Subclusters (moons) -> Images (thumbnails)
-
----
-
-### Design Principle
-
-The hierarchy is structural only embedding coordinates remain untouched.  
-No scaling, normalization, or repositioning is applied to data points.  
-All spatial relationships strictly reflect the original embedding space.
+* [Architecture Details](ARCHITECTURE.md)
+* [User Study Summary](USER_STUDY.md)
+* [Development Timeline](development_log.md)
+* [Project Roadmap](ROADMAP.md)
 
 ---
 
-### Purpose of Upgrade
+# Project Status
 
-This refactor transforms the system from a small dataset research prototype into a scalable exploratory visualisation framework capable of supporting large embedding datasets (10k–50k+ samples).
+Active Research Prototype, Under Development
 
----
+Current work focuses on:
 
-## Project Status
-
-**Active Research Prototype - Under Development**
-
-New interaction techniques and evaluation experiments are currently being implemented.
-
-
+* scalability improvements
+* interaction refinement
+* rendering optimization
+* immersive navigation design
