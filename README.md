@@ -1,12 +1,32 @@
 # Exploratory 3D Information Retrieval Visualization System
 
-Research-oriented immersive analytics system for exploring large
-
-
-
- image embedding datasets through interactive hierarchical 3D environments.
+Research-oriented immersive analytics system for exploring large-scale image embedding datasets through interactive hierarchical 3D environments.
 
 Built using Unity, Python, UMAP, HDBSCAN, and deep visual embeddings.
+
+---
+
+# Demo
+
+<!-- Add demo video or GIF here -->
+
+https://github.com/user-attachments/assets/97244e5b-92ec-4933-a9a9-d7e192c1154a
+
+---
+
+# Visual Overview
+
+### Hierarchical Cluster Exploration
+
+<!-- Add cluster overview screenshot -->
+<img width="1122" height="865" alt="image" src="https://github.com/user-attachments/assets/26377f56-c120-46f2-809f-4748361095d4" />
+
+
+### Embedding Space Visualization
+
+<!-- Add embedding screenshot -->
+<img width="680" height="314" alt="image" src="https://github.com/user-attachments/assets/c9b137ea-8117-485d-b9fe-271ba1ca8d12" />
+
 
 ---
 
@@ -35,7 +55,7 @@ to create a scalable exploratory information retrieval environment.
 * Progressive reveal interaction system
 * HDBSCAN-based hierarchical clustering
 * Outlier-aware visual exploration
-* Supports 14k+ images and 1500+ hierarchy nodes
+* Supports 14,000+ images and 1,500+ hierarchy nodes
 * Usability-tested interaction workflow
 
 ---
@@ -79,18 +99,57 @@ Images -> ResNet50 Feature Extraction -> Embedding Generation -> UMAP Dimensiona
 
 ---
 
-# Scalability Upgrade
+# Geometry Preservation Strategy
+
+A major challenge in hierarchical embedding visualization is preserving spatial relationships while scaling across multiple hierarchy levels.
+
+To address this, the system implements a geometry-preserving layout strategy using:
+
+* global cluster anchors
+* uniform affine transformations
+* consistent spatial scaling
+
+This preserves:
+
+* local neighbourhood structure
+* pairwise distance relationships
+* angular consistency
+* k-nearest-neighbour integrity
+
+while maintaining hierarchical readability.
+
+---
+
+# Scalability
 
 The system was initially developed using datasets containing approximately 3,000 images.
 
-To support larger datasets (14k+ images), the architecture was extended with additional hierarchical abstraction layers and improved layout strategies to maintain:
+The final implementation supports:
 
-* spatial readability
-* hierarchy clarity
-* geometry preservation
+* 14,000+ images
+* 1,500+ hierarchy nodes
+
+through scalable hierarchical clustering, progressive reveal interaction, and optimized spatial layout strategies.
+
+---
+
+# User Study Summary
+
+A lightweight usability study was conducted to evaluate:
+
+* interaction discoverability
+* hierarchy understanding
+* spatial similarity perception
 * navigation usability
 
-The hierarchy is structural only — embedding coordinates remain unchanged.
+The study showed that users generally:
+
+* quickly understood the interaction model
+* perceived nearby images as visually related
+* navigated the hierarchy intuitively
+* responded positively to progressive reveal interaction
+
+Additional details are available in the user study documentation.
 
 ---
 
@@ -112,17 +171,24 @@ This project intersects multiple research and engineering domains:
 * [Architecture Details](ARCHITECTURE.md)
 * [User Study Summary](USER_STUDY.md)
 * [Development Timeline](development_log.md)
-* [Project Roadmap](ROADMAP.md)
+* [Future Research Directions](ROADMAP.md)
 
 ---
 
 # Project Status
 
-Active Research Prototype, Under Development
+Completed Research Prototype
 
-Current work focuses on:
+Key implemented contributions:
 
-* scalability improvements
-* interaction refinement
-* rendering optimization
-* immersive navigation design
+* geometry-preserving hierarchical visualization
+* immersive spatial exploration workflow
+* scalable clustering architecture
+* usability-evaluated interaction design
+
+The project demonstrates how immersive visualization techniques can support exploratory analysis and understanding of large-scale embedding datasets through interactive hierarchical spatial environments.
+
+
+
+
+
