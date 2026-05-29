@@ -137,7 +137,7 @@ Several readability improvements were introduced:
 
 * logarithmic node radius scaling
 * depth-based size reduction
-* sibling-local radius capping
+* sibling local radius capping
 * adaptive image quad sizing
 
 These refinements reduce overlap and improve visual clarity for dense datasets.
